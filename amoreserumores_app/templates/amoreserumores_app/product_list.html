@@ -1,0 +1,9 @@
+
+<h1>Produtos</h1>
+
+{% for product in ProductListView %}
+    <h3>
+        <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
+    </h3>
+    <p>{{ product.description }}</p>
+{% endfor %}
