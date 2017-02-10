@@ -25,6 +25,6 @@ urlpatterns = ('django.views.generic.list_detail',
 
 urlpatterns = [
     url(r'^$', views.home_page, name='amoreserumores_app/home_page'),
-    url(r'^product/$', views.ProductList.as_view()),
-    url(r'^product/(?P<slug>[-\W]+)$', views.ProductDetail.as_view()),
+    url(r'^produto/$', views.ProductList.as_view()),
+    url(r'^produto/(?P<slug>[-\W]+)$', views.ProductDetail.as_view()),
 ]
